@@ -51,4 +51,7 @@
 // such as 'href' or 'class'.
 - (NSString *) objectForKey:(NSString *) theKey;
 
+//Returns the child dictionaries of this node as an array of TFHppleElements
+- (NSArray*)childArray;
+
 @end
