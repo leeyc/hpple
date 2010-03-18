@@ -66,9 +66,7 @@ NSString * const TFHppleNodeChildArray			 = @"nodeChildArray";
 	id dicts = [node objectForKey:TFHppleNodeChildArray];
 	NSArray* result = [[NSMutableArray alloc] init];
 	
-	TFHppleElement* temp;
-	//if(![dicts isKindOfClass:[NSDictionary class]]){ return nil;}
-	
+	TFHppleElement* temp;	
 	for(NSDictionary* dict in dicts){
 		temp = [[TFHppleElement alloc] initWithNode:dict];
 		[result addObject:temp];
